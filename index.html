@@ -293,7 +293,14 @@ p{margin:0}
 @media (max-width:860px){.enroll{grid-template-columns:1fr}}
 
 footer{background:var(--green-deep);color:var(--on-dark-muted);border-top:1px solid var(--dark-line);font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-block:26px}
+.org-mark{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.org-mark img{height:30px;width:auto}
+.org-mark span{border-left:1.5px solid var(--green);padding-left:12px;font:700 12.5px/1.15 var(--display);letter-spacing:.02em;text-transform:uppercase;color:var(--green-deep)}
+.org-mark.dark img{height:38px}
+.org-mark.dark span{border-color:var(--gold);color:var(--gold)}
+@media (max-width:640px){.nav .org-mark span{display:none}.nav .org-mark img{height:24px}}
+@media (max-width:480px){.nav .org-mark{display:none}}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-block:26px}
 
 .reveal{transition:opacity .6s,transform .6s}
 .js .reveal.wait{opacity:0;transform:translateY(18px)}
@@ -313,6 +320,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:
       <a href="#faq">FAQ</a>
       <a href="#enroll">Enroll</a>
     </nav>
+    <a class="org-mark" href="https://www.cpp.edu/sci/computer-science/" target="_blank" rel="noopener" aria-label="Cal Poly Pomona Computer Science Department">
+      <img src="cpp-logo-green.png" alt="Cal Poly Pomona" width="3572" height="782">
+      <span>Computer<br>Science</span>
+    </a>
   </div>
 </header>
 
@@ -589,8 +600,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:
 
 <footer>
   <div class="wrap">
+    <a class="org-mark dark" href="https://www.cpp.edu/sci/computer-science/" target="_blank" rel="noopener" aria-label="Cal Poly Pomona Computer Science Department">
+      <img src="cpp-logo-gold.png" alt="Cal Poly Pomona" width="3564" height="771">
+      <span>Computer Science<br>Department</span>
+    </a>
     <span>CS 2990 · AI Vibe Coding for All: From Idea to Product</span>
-    <span>Computer Science Department · Cal Poly Pomona</span>
   </div>
 </footer>
 
